@@ -75,14 +75,26 @@ public class CoinRolls extends Fragment {
                 try{
                     try{
                         s25 = Integer.parseInt(edit25.getText().toString());
-                        s10 = Integer.parseInt(edit10.getText().toString());
-                        s5 = Integer.parseInt(edit5.getText().toString());
-                        s1 = Integer.parseInt(edit1.getText().toString());
                     }
                     catch(Exception e){
                         s25 = 0;
+                    }
+                    try{
+                        s10 = Integer.parseInt(edit10.getText().toString());
+                    }
+                    catch(Exception e){
                         s10 = 0;
+                    }
+                    try{
+                        s5 = Integer.parseInt(edit5.getText().toString());
+                    }
+                    catch(Exception e){
                         s5 = 0;
+                    }
+                    try{
+                        s1 = Integer.parseInt(edit1.getText().toString());
+                    }
+                    catch(Exception e){
                         s1 = 0;
                     }
 
