@@ -76,24 +76,45 @@ public class Bills extends Fragment {
             @Override
             public void onClick(View view) {
                 try {
-                    try{
+                    try {
                         s100 = Integer.parseInt(edit100.getText().toString());
-                        s50 = Integer.parseInt(edit50.getText().toString());
-                        s20 = Integer.parseInt(edit20.getText().toString());
-                        s10 = Integer.parseInt(edit10.getText().toString());
-                        s5 = Integer.parseInt(edit5.getText().toString());
-                        s2 = Integer.parseInt(edit2.getText().toString());
-                        s1 = Integer.parseInt(edit1.getText().toString());
                     }
                     catch(Exception e){
                         s100 = 0;
+                    }
+                    try{
+                        s50 = Integer.parseInt(edit50.getText().toString());
+                    }
+                    catch(Exception e) {
                         s50 = 0;
+                    }
+                    try{
+                        s20 = Integer.parseInt(edit20.getText().toString());
+                    }
+                    catch(Exception e) {
                         s20 = 0;
+                    }try{
+                        s10 = Integer.parseInt(edit10.getText().toString());
+                    }
+                    catch(Exception e) {
                         s10 = 0;
+                    }try{
+                        s5 = Integer.parseInt(edit5.getText().toString());
+                    }
+                    catch(Exception e) {
                         s5 = 0;
+                    }try{
+                        s2 = Integer.parseInt(edit2.getText().toString());
+                    }
+                    catch(Exception e) {
                         s2 = 0;
+                    }try{
+                        s1 = Integer.parseInt(edit1.getText().toString());
+                    }
+                    catch(Exception e) {
                         s1 = 0;
                     }
+
 
                     textDen.setText(Integer.toString(s1 + s2 + s5 + s10 + s20 + s50 + s100));
                     //Total amount
